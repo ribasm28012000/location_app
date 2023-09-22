@@ -44,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
     await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
         .then((Position position) {
       setState(() => _currentLocation = position);
-      textLocation = "It'sYour Location";
+      textLocation = "It's Your Location";
       lon = "Longitude : ";
       lat = "Latitude : ";
     }).catchError((e) {
@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text(
                   textLocation,
                   style: const TextStyle(
-                      fontSize: 24, fontWeight: FontWeight.bold),
+                      fontSize: 30, fontWeight: FontWeight.bold),
                 )),
             SizedBox(
                 height: h * 0.10,
